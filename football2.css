@@ -1,0 +1,170 @@
+*,
+*:before,
+*:after{
+    box-sizing:border-box;
+}
+
+body{
+    background: #f7f7f7;
+    font-family: "lato", sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+/* side bar menu */
+aside{
+    height:100%;
+    width:120px;
+    position:fixed;
+    z-index:1;
+    top:0;
+    left:0;
+    background-color:#cc0000;
+    overflow-x:hidden;
+}
+/* navigation menu links */
+aside div{
+    height:110px;
+    width:100%;
+    line-height:110px;
+    text-align:center;
+    border-bottom:solid 1px #cdcdcd;
+}
+aside div a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+    display: block;
+}
+
+aside div:hover{
+    background:#FEC500;
+    color:#f1f1f1;
+}
+
+/* ---------------------------------------
+
+              WRAPPER STYLES
+
+
+-------------------------------------------*/
+.wrapper{
+    margin-left:120px;
+}
+
+/* ------------------------------------------
+---------------------------------------------
+------------Header of the Page--------------- */
+
+.page-header{
+    padding:10px;
+    padding-bottom:20px;
+    background:#3d3d3d;
+    overflow-y: hidden !important;
+}
+.header-info{
+    color:#fff;
+    font-size:15px;
+    margin-right:25px;
+}
+
+/* ==============================================
+
+==============HOME PAGE MAIN HEADER OF THE PAGE== */
+
+.home-content{
+    display:inline-block;
+    width:100%;
+    margin-left:120px;
+    /* border:1px solid black; */
+}
+.home-logo{
+    background:#3d3d3d;
+    width:490px;
+    height:270px;
+}
+.home-trending{
+    background:#003663;
+    color:#fff;
+    max-width:490px;
+    height:582.5px;
+    padding-left:10px;
+    padding-top:10px;
+    /* margin-top:-20px; */
+}
+
+.logo{
+    margin:40px 0 40px 10px;
+    /* border:1px solid black; */
+}
+/* =========================================================================
+
+=================the custom list items under trending===*/
+
+.custom-counter{
+    margin:0;
+    padding:0;
+    list-style-type:none;
+}
+.custom-counter li{
+    counter-increment: step-counter;
+    margin-bottom: 10px;
+}
+.custom-counter li:before{
+    content:counter(step-counter);
+    margin-right:5px;
+    font-size: 80%;
+    background-color:#3d3d3d;
+    color:#f0c419;
+    font-weight:bold;
+    padding:3px 8px;
+    border-radius:3px;
+
+}
+
+/* =========Home content============== */
+
+.home-article{
+    /* display:inline-block; */
+    border:solid 1px black;
+     margin-left:610px;
+     margin-top:-855px;
+    position:relative; 
+    height:855px;
+
+    
+}
+
+.article-image{
+    /* border:solid 1px black; */
+    display:block;
+    /* height:870px; */
+    width:100%;
+    height:100%;
+    object-fit:fill;
+   
+}
+.talent{
+    font-size:4em;
+    color:#fff;
+    position:absolute;
+    bottom:60px;
+    left:20px;
+    padding:20px;
+    background-color: rgb(0,0,0, .3);
+    
+}
+.readmore{
+    position:absolute;
+    bottom: 20px; left: 20px;
+    padding: 10px 20px 10px 20px;
+    background: #FEC500;
+     color: #222;
+    border: none; text-decoration: none;
+    font-weight: 800; 
+}
